@@ -124,6 +124,10 @@
     text-decoration: none;
 }
 
+.nav_bar ul a:hover {
+    border-bottom: 0.2vw solid #22356f;
+}
+
 .nav_bar input {
     margin-left: 17.3vw; /* 250px; */
     margin-top: 1.7vw; /* 25px; */
@@ -137,6 +141,11 @@
     font-family:Lato;
     font-size: 0.97vw; /* 14px; */
     font-weight: 700;
+}
+
+.nav_bar input:hover {
+    background-color: #80e0ed;
+    transition: 0.5s;
 }
 
 .main_info {
@@ -187,6 +196,11 @@
     letter-spacing: 2px;
 }
 
+.first_part .info_and_form input:hover {
+    box-shadow: 0.48vw 0.27vw 0.13vw 0px #b0adba9e;
+    transition: 0.5s;
+}
+
 .buttons a {
     color: #F9B640;
     font-family: Lato;
@@ -195,6 +209,11 @@
     font-size: 1.1vw; /* 16px; */
     letter-spacing: 2px;
     text-decoration: none;
+}
+
+.buttons a:hover {
+    letter-spacing: 0.2vw;
+    transition: 1s;
 }
 
 
@@ -230,6 +249,10 @@
 
 .nav_bar ul a {
     font-size: 14px; 
+}
+
+.nav_bar ul a:hover {
+    border-bottom: 3px solid #22356f;
 }
 
 .nav_bar input {
@@ -273,9 +296,17 @@
     font-size: 16px;
 }
 
+.first_part .info_and_form input:hover {
+    box-shadow: 7px 4px 2px 0px #b0adba9e;
+}
+
 .buttons a {
     margin-left: 38px; 
     font-size: 16px; 
+}
+
+.buttons a:hover {
+    letter-spacing: 3px;
 }
 
 }
@@ -385,6 +416,10 @@
         margin-top: 10px;
     }
 
+    .nav_bar ul a:hover {
+        border-bottom: 0.8vw solid #22356f;
+    }
+
     .nav_bar {
         height: auto;
     }
@@ -417,10 +452,19 @@
         font-size: 5vw;
     }
 
+    .first_part .info_and_form input:hover {
+        box-shadow: 1.9vw 1vw 0.5vw 0px #b0adba9e;
+        transition: 0.5s;
+    }
+
     .buttons a {
         margin-left: 0px;
         margin-top: 7vw;
         font-size: 5vw;
+    }
+
+    .buttons a:hover {
+        letter-spacing: 1vw;
     }
 
 }
