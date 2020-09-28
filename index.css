@@ -52,6 +52,9 @@
 }
 
 
+body p, body a, body h1{
+    font-family: Lato;
+}
 
 
 
@@ -67,7 +70,6 @@
 
 
 
-/*   matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() */
 
 
 .info_and_form {
@@ -101,7 +103,6 @@
 .logo {
     color:#62D0DF;
     font-size: 1.6vw; /*24px; */
-    font-family: Lato;
     font-weight: 700;
     margin-left: 12.4vw; /*179px; */
 }
@@ -118,7 +119,6 @@
 
 .nav_bar ul a {
     color: #22356f;
-    font-family: Lato;
     font-weight: 400;
     font-size: 0.97vw; /* 14px; */
     text-decoration: none;
@@ -138,7 +138,6 @@
     border-radius: 3.4vw; /* 50px; */
     border: none;
     color: white;
-    font-family:Lato;
     font-size: 0.97vw; /* 14px; */
     font-weight: 700;
 }
@@ -161,7 +160,6 @@
 }
 
 .heading {
-    font-family: Lato;
     font-size: 3.3vw; /* 48px; */
     letter-spacing: -0.035em;
     text-transform: uppercase;
@@ -171,7 +169,6 @@
 }
 
 .text {
-    font-family: Lato;
     font-size: 1.6vw; /* 24px; */
     line-height: 2.9vw; /* 42px; */
     color: #22356F;
@@ -189,7 +186,6 @@
     width: 10.4vw; /* 150px; */
     height: 3.4vw; /* 50px; */
     color: white;
-    font-family: Lato;
     font-weight: 700;
     font-size: 1.1vw; /* 16px */
     border: none;
@@ -203,7 +199,6 @@
 
 .buttons a {
     color: #F9B640;
-    font-family: Lato;
     font-weight: 700;
     margin-left: 2.6vw; /*38px; */
     font-size: 1.1vw; /* 16px; */
@@ -217,6 +212,69 @@
 }
 
 
+
+
+
+
+/* second block of the page (Why Thrive?) */
+
+.second_part {
+    display: flex;
+}
+
+
+
+
+.blue_block {
+    background-color: #62D0DF;
+    width: 63.5vw; /* 915px; */
+}
+
+.blue_block p, .blue_block h1 {
+    color: white;
+}
+
+.blue_block p {
+    display: inline;
+    line-height: 2.4vw /* 35px; */
+}
+
+.text_block {
+    width: 38.5vw; /* 555px; */
+    margin-left: 12.3vw; /* 178px; */
+    margin-top: 10.6vw; /* 153px; */
+}
+
+.text2 {
+    font-weight: 700;
+    font-size: 1.6vw; /* 24px; */
+}
+
+.text3 {
+    font-weight: 300;
+    font-size: 1.38vw; /* 20px; */
+}
+
+.heading2 {
+    font-size: 2.5vw; /* 36px; */
+    font-weight: 700;
+    margin-bottom: 5.2vw; /* 75px; */
+}
+
+.second_part img {
+    width: 36.4vw; /* 525px; */
+}
+
+
+
+
+
+/*third block of the site */
+
+.third_part {
+    height: 800px;
+    background-color: #f4f9e2;
+}
 
 
 
@@ -309,6 +367,44 @@
     letter-spacing: 3px;
 }
 
+
+
+
+.blue_block {
+    width: 915px; 
+    display: flex;
+    align-items: center;
+}
+
+.blue_block p {
+    line-height:  35px;
+}
+
+.text_block {
+    width: 400px;
+    margin-left: 178px; 
+    margin-top: 0px;
+}
+
+.text2 {
+    font-size: 24px;
+}
+
+.text3 {
+    font-size: 20px;
+}
+
+.heading2 {
+    font-size: 36px; 
+    margin-bottom:  75px;
+}
+
+.second_part img {
+    width: 525px; 
+}
+
+
+
 }
 
 
@@ -325,6 +421,26 @@
 
     .nav_bar input {
         display: none;
+    }
+
+
+
+
+    .second_part img {
+        width: 65%;
+    }
+
+    .blue_block {
+        width: 35%;
+    }
+
+    .text_block {
+        width: 30vw;
+        margin: 30px 20px;
+    }
+
+    .heading2 {
+        margin-bottom: 30px;
     }
 }
 
@@ -349,6 +465,39 @@
     .nav_bar ul {
         margin-left: 30px;
         margin-top: 0px;
+    }
+
+
+
+
+    .second_part {
+        display: block;
+    }
+
+    .second_part img {
+        width: 100%;
+    }
+
+    .text_block {
+        width: 90%;
+    }
+
+    .blue_block {
+        position: absolute;
+        width: 53%;
+        left: 47%;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 560px) {
+    .blue_block {
+        width: 100%;
+        left: 0px;
+        background-color: rgba(98, 208, 223, 0.7);
     }
 }
 
@@ -396,6 +545,28 @@
     .buttons {
         justify-content: center;
     }
+
+
+
+    
+    .second_part {
+        display: block;
+    }
+
+    .blue_block {
+        width: 100%;
+        position: initial;
+        background-color: rgba(98, 208, 223, 1);
+        display: flex;
+        justify-content: center;
+    }
+
+    .text_block {
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
 }
 
 
@@ -466,6 +637,36 @@
     .buttons a:hover {
         letter-spacing: 1vw;
     }
+
+
+
+
+    .blue_block p {
+        display: inline;
+        line-height: 9.7vw;
+    }
+
+    .text_block {
+        margin-top: 8.3vw;
+        margin-bottom: 8.3vw;
+    }
+
+    .text2 {
+        font-weight: 700;
+        font-size: 6.6vw;
+    }
+    
+    .text3 {
+        font-weight: 300;
+        font-size: 5.5vw;
+    }
+    
+    .heading2 {
+        font-size: 10vw;
+        font-weight: 700;
+        margin-bottom: 8.3vw;
+    }
+    
 
 }
 
