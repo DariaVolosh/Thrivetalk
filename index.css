@@ -52,10 +52,13 @@
 }
 
 
-body p, body a, body h1{
+body p, body a, body h1, body li{
     font-family: Lato;
 }
 
+body {
+    background-color: #f4f9e2;
+}
 
 
 /* first block of the page */
@@ -63,7 +66,6 @@ body p, body a, body h1{
 .first_part {
     height: auto;
     width: 100%;
-    background-color: #f4f9e2;
     overflow: hidden;
     position: relative;
 }
@@ -300,7 +302,6 @@ body p, body a, body h1{
 /*third block of the site */
 
 .third_part {
-    background-color: #f4f9e2;
     display: flex;
 }
 
@@ -321,6 +322,63 @@ body p, body a, body h1{
     line-height: 2.3vw; /* 34px; */
     font-weight: 700;
 }
+
+
+
+
+/* fourth block of the site (We can help you with) */
+
+
+.fourth_part p {
+    color: #22356F;
+    opacity: 0.5;
+    font-size: 1.1vw; /* 16px */
+    margin: 4.8vw 0px 1.7vw; /* 75px, 0px, 25px; */
+    text-align: center;
+}
+
+.sections {
+    display: flex;
+    width: 100%;
+    height: 25vw; /*360px */
+    margin-bottom: 8.3vw; /* 120px; */
+}
+
+.sections div {
+    width: 25vw; /* 360px; */
+    display: flex;
+    justify-content: center;
+}
+
+.sections .colored_block:hover {
+    margin-top: -1.38vw;
+    transition: 1s;
+}
+
+.sections .block {
+    width: 70%;
+    height: 70%;
+    margin-top: 5vw; /* 72px; */
+    border-top: 0.138vw solid white;
+}
+
+.sections a {
+    color: white;
+    font-size: 2.2vw; /* 32px; */
+    line-height: 2.3vw; /* 34px; */
+    font-weight: 700;
+    margin-top: 1.59vw; /* 23px; */
+    text-decoration: none;
+    width: 100%;
+}
+
+.sections a::before {
+    color: #E9B730;
+    content: "●";
+    padding-right: 1vw; /* 15px; */
+}
+
+
 
 
 
@@ -373,7 +431,7 @@ body p, body a, body h1{
 }
 
 .nav_bar input {
-    margin-left: 150px;
+    margin-left: 200px;
     margin-top: 25px; 
     width: 150px; 
     height: 50px; 
@@ -491,6 +549,41 @@ body p, body a, body h1{
 
 
 
+
+.fourth_part p {
+    font-size: 16px;
+    margin: 75px 0px 25px; 
+}
+
+.sections {
+    height: 360px;
+    margin-bottom: 120px; 
+}
+
+.sections div {
+    width: 360px; 
+}
+
+.sections .colored_block:hover {
+    margin-top: -20px;
+}
+
+.sections .block {
+    margin-top: 72px; 
+    border-top: 1px solid white;
+}
+
+.sections a {
+    font-size: 32px; 
+    line-height: 34px; 
+    margin-top: 23px; 
+}
+
+.sections a::before {
+    padding-right: 15px; 
+}
+
+
 }
 
 
@@ -550,6 +643,20 @@ body p, body a, body h1{
         width: 90%;
         height: auto;
     }
+
+
+
+
+    .sections {
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .sections div {
+        height: 360px;
+    }
     
 }
 
@@ -598,6 +705,11 @@ body p, body a, body h1{
     }
 
 
+
+    .sections .colored_block:hover {
+       box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.1);
+       margin-top: 0px;
+    }
 
 }
 
@@ -813,6 +925,34 @@ body p, body a, body h1{
         margin-bottom: 13.8vw;
     }
     
+
+
+    .sections div {
+        height: 100vw;
+    }
+    
+    .fourth_part p {
+        font-size: 4.4vw;
+        margin: 20.8vw 0px 6.9vw;
+    }
+    
+    .sections {
+        margin-bottom: 33vw;
+    }
+
+    .sections .block {
+        margin-top: 20vw;
+    }
+    
+    .sections a {
+        font-size: 8.8vw;
+        line-height: 9.4vw;
+        margin-top: 6.3vw;
+    }
+    
+    .sections a::before {
+        padding-right: 4.1vw;
+    }
     
 
 }
