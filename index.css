@@ -128,6 +128,18 @@ body p, body a, body h1{
     border-bottom: 0.2vw solid #22356f;
 }
 
+@keyframes vibrate {
+    from {
+        width: 10.8vw;
+        height: 3.8vw;
+    }
+
+    to {
+        width: 10.4vw;
+        height: 3.4vw;
+    }
+}
+
 .nav_bar input {
     margin-left: 17.3vw; /* 250px; */
     margin-top: 1.7vw; /* 25px; */
@@ -140,6 +152,11 @@ body p, body a, body h1{
     color: white;
     font-size: 0.97vw; /* 14px; */
     font-weight: 700;
+    
+    animation-name: vibrate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .nav_bar input:hover {
@@ -154,9 +171,20 @@ body p, body a, body h1{
     margin-bottom: 5.3vw; /* 77px; */
 }
 
+@keyframes appear {
+    100% {
+        margin-left: 0px;
+        font-size: 1.6vw;
+    }
+}
+
 #logo2 {
-    margin-left: 0px;
+    margin-left: -999px;
     margin-bottom: 2.7vw; /* 40px; */
+
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 .heading {
@@ -272,9 +300,28 @@ body p, body a, body h1{
 /*third block of the site */
 
 .third_part {
-    height: 800px;
     background-color: #f4f9e2;
+    display: flex;
 }
+
+.third_part h1 {
+    font-size: 1.1vw; /* 16px; */
+    color: #22356F;
+    margin-top: 10.8vw; /* 156px; */
+    margin-left: 7.3vw; /* 106px; */
+}
+
+.third_part p {
+    font-size: 1.6vw; /* 24px; */
+    width: 41vw; /* 592px; */
+    height: 14.5vw; /* 210px; */
+    color: #22356F;
+    margin-left: 15.6vw; /* 225px; */
+    margin-top: 10.4vw; /* 150px; */
+    line-height: 2.3vw; /* 34px; */
+    font-weight: 700;
+}
+
 
 
 
@@ -313,6 +360,18 @@ body p, body a, body h1{
     border-bottom: 3px solid #22356f;
 }
 
+@keyframes vibrate {
+    from {
+        width: 50px;
+        height: 60px;
+    }
+
+    to {
+        width: 150px;
+        height: 50px;
+    }
+}
+
 .nav_bar input {
     margin-left: 150px;
     margin-top: 25px; 
@@ -327,6 +386,13 @@ body p, body a, body h1{
     margin-left: 179px; 
     margin-top: 187px; 
     margin-bottom: 77px; 
+}
+
+@keyframes appear {
+    100% {
+        margin-left: 0px;
+        font-size: 24px;
+    }
 }
 
 #logo2 {
@@ -405,6 +471,26 @@ body p, body a, body h1{
 
 
 
+.third_part h1 {
+    font-size:16px; 
+    color: #22356F;
+    margin-top: 156px; 
+    margin-left: 106px; 
+}
+
+.third_part p {
+    font-size: 24px; 
+    width: 592px; 
+    height: 210px; 
+    color: #22356F;
+    margin-left: 225px; 
+    margin-top: 150px; 
+    line-height:34px;
+    font-weight: 700;
+}
+
+
+
 }
 
 
@@ -442,6 +528,29 @@ body p, body a, body h1{
     .heading2 {
         margin-bottom: 30px;
     }
+
+
+
+
+    .third_part {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .third_part h1 {
+        margin: 50px 25px;
+        margin-left: 30px;
+    }
+
+    .third_part p {
+        margin: 0px;
+        margin-bottom: 50px;
+        margin-left: 30px;
+        width: 90%;
+        height: auto;
+    }
+    
 }
 
 
@@ -487,6 +596,8 @@ body p, body a, body h1{
         width: 53%;
         left: 47%;
     }
+
+
 
 }
 
@@ -565,6 +676,27 @@ body p, body a, body h1{
         text-align: center;
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+
+
+
+    .third_part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .third_part h1 {
+        margin: 50px 25px;
+    }
+
+    .third_part p {
+        margin: 0px;
+        margin-bottom: 50px;
+        width: 80%;
+        text-align: center;
     }
 
 }
@@ -666,6 +798,21 @@ body p, body a, body h1{
         font-weight: 700;
         margin-bottom: 8.3vw;
     }
+    
+
+
+    .third_part h1 {
+        font-size: 4.4vw;
+        color: #22356F;
+        margin: 13.8vw 6.9vw;
+    }
+    
+    .third_part p {
+        font-size: 6.6vw;
+        line-height: 9.4vw;
+        margin-bottom: 13.8vw;
+    }
+    
     
 
 }
