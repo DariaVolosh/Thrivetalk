@@ -104,5 +104,64 @@
             </div>
         </div>
     </div>
+
+
+    <div class="fifth_part">
+
+        <p id="click_here">CLICK HERE FOR MORE </p>
+        
+        <div class="sections">
+            <div class="colored_block" style="background-color: #22356F"> 
+                <div class="block">
+                    <a href="#">Physycal health</a>
+                </div>
+            </div>
+
+
+            <div class="colored_block" style="background-color: #0052C1">
+                <div class="block">
+                    <a href="#">Mental health</a>
+                </div>
+            </div>
+
+
+            <div class="colored_block" style="background-color: #62D0DF">
+                <div class="block">
+                    <a href="#">Nutrition</a>
+                </div>
+            </div>
+
+
+            <div class="colored_block" style="background-color: #62D0DF">
+                <div class="block">
+                    <a href="#">Gymnastics</a>
+                </div>
+            </div>
+
+
+            <div class="colored_block" style="background-color: #DEE1FF"> 
+                <div class="block">
+                    <a href="#">Crossfit</a>
+                </div>
+            </div>
+
+
+            <div class="colored_block" style="background-color: #8F00FF">
+                <div class="block">
+                    <a href="#">Aerobics</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let click_here=document.getElementById("click_here");
+        let sections=document.getElementsByClassName('sections')[1];
+
+        click_here.onclick = function() {
+            sections.style.display = "flex";
+        }
+    </script>
 </body>
 </html>

@@ -329,7 +329,7 @@ body {
 /* fourth block of the site (We can help you with) */
 
 
-.fourth_part p {
+.fourth_part p, .fifth_part p {
     color: #22356F;
     opacity: 0.5;
     font-size: 1.1vw; /* 16px */
@@ -340,14 +340,17 @@ body {
 .sections {
     display: flex;
     width: 100%;
-    height: 25vw; /*360px */
     margin-bottom: 8.3vw; /* 120px; */
 }
 
 .sections div {
-    width: 25vw; /* 360px; */
     display: flex;
     justify-content: center;
+}
+
+.sections .colored_block {
+    width: 25vw; /* 360px; */
+    height: 25vw; /*360px */
 }
 
 .sections .colored_block:hover {
@@ -380,6 +383,28 @@ body {
 
 
 
+
+
+/* fifth block (six sections) */
+
+.fifth_part p {
+    display: none;
+}
+
+.fifth_part .sections {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.fifth_part .sections .colored_block {
+    width: 33.3vw;
+    height: 33.3vw;
+}
+
+.fifth_part .sections .block {
+    margin-top: 6.6vw;
+}
 
 
 
@@ -556,11 +581,11 @@ body {
 }
 
 .sections {
-    height: 360px;
     margin-bottom: 120px; 
 }
 
-.sections div {
+.sections .colored_block {
+    height: 360px;
     width: 360px; 
 }
 
@@ -582,6 +607,28 @@ body {
 .sections a::before {
     padding-right: 15px; 
 }
+
+
+
+
+.fifth_part p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.fifth_part .sections .colored_block {
+    width: 480px;
+    height: 480px;
+}
+
+.fifth_part .sections .block {
+    margin-top: 96px;
+}
+
+.fifth_part .sections {
+    margin-bottom: 0px;
+}
+
 
 
 }
@@ -651,11 +698,11 @@ body {
         display:flex;
         justify-content: center;
         flex-wrap: wrap;
-        height: auto;
     }
 
     .sections div {
         height: 360px;
+        height: auto;
     }
     
 }
@@ -710,6 +757,31 @@ body {
        box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.1);
        margin-top: 0px;
     }
+
+
+    
+    @keyframes vibrate1 {
+        from {
+            opacity: 0.5;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .fifth_part p {
+        display: block;
+        animation-name: vibrate1;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+    .fifth_part .sections {
+        display:none;
+    }
+
 
 }
 
@@ -810,6 +882,14 @@ body {
         width: 80%;
         text-align: center;
     }
+
+
+
+    .fifth_part .sections .colored_block {
+        width: 96vw;
+        height: 96vw;
+    }
+    
 
 }
 
@@ -927,7 +1007,7 @@ body {
     
 
 
-    .sections div {
+    .sections .colored_block {
         height: 100vw;
     }
     
@@ -953,7 +1033,21 @@ body {
     .sections a::before {
         padding-right: 4.1vw;
     }
-    
+
+
+
+    .fifth_part p {
+        margin-bottom: 8.3vw;
+        font-size: 4.4vw;
+    }
+
+    .fifth_part .sections .block {
+        margin-top: 26.6vw;
+    }
+
+    .fifth_part .sections {
+        margin-bottom: 0px;
+    }
 
 }
 
