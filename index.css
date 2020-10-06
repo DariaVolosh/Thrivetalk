@@ -334,6 +334,9 @@ body {
     opacity: 0.5;
     font-size: 1.1vw; /* 16px */
     margin: 4.8vw 0px 1.7vw; /* 75px, 0px, 25px; */
+}
+
+.fourth_part p {
     text-align: center;
 }
 
@@ -387,8 +390,15 @@ body {
 
 /* fifth block (six sections) */
 
+.fifth_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .fifth_part p {
     display: none;
+    cursor: pointer;
 }
 
 .fifth_part .sections {

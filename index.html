@@ -125,7 +125,7 @@
             </div>
 
 
-            <div class="colored_block" style="background-color: #62D0DF">
+            <div class="colored_block" style="background-image:url(images/6.png); background-repeat:no-repeat; background-position:center; background-size:cover">
                 <div class="block">
                     <a href="#">Nutrition</a>
                 </div>
@@ -159,8 +159,20 @@
         let click_here=document.getElementById("click_here");
         let sections=document.getElementsByClassName('sections')[1];
 
+        let text1="CLICK HERE FOR MORE";
+        let text2="CLICK HERE TO HIDE";
+
+
         click_here.onclick = function() {
-            sections.style.display = "flex";
+            let text=click_here.innerHTML;
+
+            if (text == text1) {
+                sections.style.display = "flex";
+                click_here.innerHTML=text2;
+            } else {
+                sections.style.display="none";
+                click_here.innerHTML=text1;
+            }
         }
     </script>
 </body>
