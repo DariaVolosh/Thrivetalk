@@ -420,6 +420,46 @@ body {
 
 
 
+/* sixth block of the page with more detailed explanation */
+
+.sixth_part {
+    height: auto;
+    width: 100%;
+    margin-top: 1.5vw; /*22px */
+    margin-bottom: 2.7vw; /* 40px */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sixth_part div {
+    width: 33%;
+    height: 16.6vw;
+}
+
+.sixth_part div p {
+    color: #22356F;
+    font-size: 1vw; /* 16px;*/
+    line-height: 1.7vw; /* 25px; */
+    opacity: 0.5;
+    width: 62%;
+    margin-left: 7.2vw; /* 105px; */
+}
+
+.sixth_part div #heading {
+    font-size: 1.9vw; /* 28px; */
+    opacity: 1;
+    letter-spacing: -0.13vw; /* -2px; */
+    margin-bottom: 1.9vw; /* 28px; */
+    margin-left: 7.2vw; /* 105px; */
+    margin-top: 3.8vw; /* 55px; */
+}
+
+
+
+
+
+
 @media only screen and (max-width: 1440px) {
 
 .blue_form {
@@ -641,6 +681,34 @@ body {
 
 
 
+
+.sixth_part div{
+    height: 240px;
+}
+
+.sixth_part {
+    margin-top: 22px;
+    margin-bottom: 40px;
+}
+
+
+
+.sixth_part div p {
+    line-height:25px; 
+    margin-left:105px; 
+    font-size: 16px;
+}
+
+.sixth_part div #heading {
+    font-size: 28px; 
+    letter-spacing: -2px; 
+    margin-bottom:28px; 
+    margin-left: 105px; 
+    margin-top:55px; 
+}
+
+
+
 }
 
 
@@ -713,6 +781,13 @@ body {
     .sections div {
         height: 360px;
         height: auto;
+    }
+
+
+
+
+    .sixth_part div {
+        width: 480px;
     }
     
 }
@@ -790,6 +865,13 @@ body {
 
     .fifth_part .sections {
         display:none;
+    }
+
+
+
+
+    .sixth_part div {
+        width: 95%;
     }
 
 
@@ -898,6 +980,13 @@ body {
     .fifth_part .sections .colored_block {
         width: 96vw;
         height: 96vw;
+    }
+
+
+
+    .sixth_part div p, .sixth_part div #heading {
+        margin-left:50px;
+        width: 80%;
     }
     
 
@@ -1058,6 +1147,35 @@ body {
     .fifth_part .sections {
         margin-bottom: 0px;
     }
+
+
+    
+    .sixth_part {
+        margin-bottom: 11vw;
+        margin-top: 6vw;
+    }
+
+    .sixth_part div{
+        height: 55vw;
+    }
+
+
+
+    
+.sixth_part div p {
+    line-height: 6.9vw; 
+    font-size: 4.4vw;
+    margin-left: 5vw;
+    width: 83vw;
+}
+
+.sixth_part div #heading {
+    font-size: 7.7vw;
+    letter-spacing: -0.5vw; 
+    margin-bottom: 7.7vw;
+    margin-left: 5vw;
+    margin-top: 15vw;
+}
 
 }
 
