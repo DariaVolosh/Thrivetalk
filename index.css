@@ -551,6 +551,53 @@ body {
 
 
 
+/* ninth block of the page (more info about how to get in touch with us) */
+
+.ninth_part {
+    display: flex;
+}
+
+.ninth_part img {
+    width: 39.5vw;
+}
+
+.ninth_part .info_block {
+    display: flex;
+    width: 60.5vw;
+}
+
+.ninth_part .info_block div {
+    width: 33%;
+    color: #22356F;
+    font-size: 0.97vw; /* 14px; */
+}
+
+#some_info {
+    margin:  6.8vw 1.59vw 9vw 4.7vw; /* 98px 23px 130px 68px; */
+}
+
+#enfold {
+    margin: 6.8vw 1.59vw 6.8vw 2.7vw; /* 98px 23px 99px 40px; */
+}
+
+#hours {
+    margin: 6.8vw 2.7vw 6.8vw 3.2vw;/* 98px 40px 99px 47px; */
+}
+
+.ninth_part .info_block div h1 {
+    font-weight: 700;
+    margin-bottom: 3.47vw; /* 50px; */
+}
+
+.ninth_part .info_block div p {
+    opacity: 0.5;
+    line-height: 1.59vw; /* 23px; */
+}
+
+
+
+
+
 @media only screen and (max-width: 1440px) {
 
 .blue_form {
@@ -861,6 +908,37 @@ body {
 }
 
 
+
+.ninth_part img {
+    width: 570px;
+}
+
+.ninth_part .info_block div {
+    font-size: 14px;
+}
+
+#some_info {
+    margin: 98px 2.6% 130px 7.8%;
+}
+
+#enfold {
+    margin: 98px 2.6% 99px 4.5%;
+}
+
+#hours {
+    margin: 98px 4.5% 99px 5.6%;
+}
+
+.ninth_part .info_block div h1 {
+    margin-bottom: 50px;
+}
+
+.ninth_part .info_block div p {
+    line-height: 23px;
+}
+
+
+
 }
 
 
@@ -962,6 +1040,17 @@ body {
     .eighth_part  #text {
         margin-bottom: 30px;
         width: 85%;
+    }
+
+
+
+    .ninth_part {
+        align-items: center;
+    }
+
+    .ninth_part img {
+        width: auto;
+        height: 280px;
     }
     
 }
@@ -1095,6 +1184,38 @@ body {
     .eighth_part div {
         width: 100%;
     }
+
+
+
+
+
+    .ninth_part {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .ninth_part img {
+        height: 330px;
+        width: auto;
+    }
+
+    .ninth_part .info_block {
+        width: 100%;
+    }
+
+    #some_info, #enfold, #hours {
+        margin-top: 49px;
+    }
+
+    #some_info {
+        margin-bottom: 65px;
+    }
+
+    #enfold, #hours {
+        margin-bottom: 49px;
+    }
+
+
 
 }
 
@@ -1243,6 +1364,37 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+
+
+
+
+    .ninth_part img {
+        width: 100%;
+        height: auto;
+    }
+
+    .ninth_part .info_block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ninth_part .info_block div {
+        width: 80%;
+        text-align: center;
+    }
+
+    .ninth_part .info_block div h1 {
+        margin-bottom: 20px;
+    }
+
+    #some_info, #enfold {
+        margin: 40px 0px 0px 0px;
+    }
+
+    #hours {
+        margin: 40px 0px 40px 0px;
     }
     
 
@@ -1473,6 +1625,29 @@ body {
 .eighth_part #help {
     font-size: 4.4vw;
     margin: 0vw 0vw 13.8vw;
+}
+
+
+
+
+.ninth_part .info_block div {
+    font-size: 3.8vw;
+}
+
+.ninth_part .info_block div p {
+    line-height: 6.3vw;
+}
+
+.ninth_part .info_block div h1 {
+    margin-bottom: 5.5vw;
+}
+
+#some_info, #enfold {
+    margin: 11.1vw 0vw 0vw 0vw;
+}
+
+#hours {
+    margin: 11.1vw 0vw 11.1vw 0vw;
 }
 
 }
