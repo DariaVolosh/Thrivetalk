@@ -598,6 +598,27 @@ body {
 
 
 
+/* footer */
+
+body footer {
+    height: 5.5vw; /*80px; */
+    background-color: #62D0DF;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-weight: 700;
+    font-size: 0.97vw; /* 14px; */
+    margin-left: 13.4vw; /* 194px; */
+}
+
+
+
+
+
+
 @media only screen and (max-width: 1440px) {
 
 .blue_form {
@@ -939,6 +960,18 @@ body {
 
 
 
+body footer {
+    height: 80px; 
+}
+
+footer p {
+    font-size: 14px;
+    margin-left:194px; 
+}
+
+
+
+
 }
 
 
@@ -1051,6 +1084,12 @@ body {
     .ninth_part img {
         width: auto;
         height: 280px;
+    }
+
+
+
+    footer p {
+        margin-left: 30px;
     }
     
 }
@@ -1396,6 +1435,17 @@ body {
     #hours {
         margin: 40px 0px 40px 0px;
     }
+
+
+
+
+    body footer {
+        justify-content: center;
+    }
+
+    footer p {
+        margin-left: 0px;
+    }
     
 
 }
@@ -1649,6 +1699,18 @@ body {
 #hours {
     margin: 11.1vw 0vw 11.1vw 0vw;
 }
+
+
+
+
+body footer {
+    height: 22vw;
+}
+
+footer p {
+    font-size: 3.8vw;
+}
+
 
 }
 
